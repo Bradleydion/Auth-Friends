@@ -4,7 +4,12 @@ import {
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 
-const Friend = (props) => {
+class Friends extends React.Component {
+    state = {
+        friendList:[]
+    };
+
+    render(){
   return (
     <div>
       <Card>
@@ -16,7 +21,7 @@ const Friend = (props) => {
         </CardBody>
       </Card>
     </div>
-  );
+  )};
 };
 
-export default Friend;
+export default Friends;

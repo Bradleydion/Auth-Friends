@@ -1,8 +1,10 @@
 import React from "react"
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap'
 
-const Login = () => {
+class Login extends React.Component{
 
+
+  render(){
     return (
           <Form inline>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
@@ -17,6 +19,7 @@ const Login = () => {
     </Form>
   );
 
+}
 }
 
 export default Login

@@ -1,8 +1,9 @@
 import React from "react"
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap'
 
-const AddFriend = () => {
+class AddFriend extends React.Component{
 
+    render(){
     return(
         // <div className="AddFriendCard">
         //     <input
@@ -33,6 +34,6 @@ const AddFriend = () => {
         </FormGroup>
         <Button>Add Friend</Button>
       </Form>
-    );
+    );}
 }
 export default AddFriend
