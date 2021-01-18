@@ -31,6 +31,7 @@ function App(props) {
         </PrivateRoute>
         <Route path="/login" component={Login}/>
         <Route component={Login}/>
+        <Route path="/addFriend" component={AddFriend}/>
       </Switch>
     </div>
     </Router>

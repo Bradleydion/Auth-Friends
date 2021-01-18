@@ -14,7 +14,7 @@ class Friends extends React.Component {
     }
 
     getData = () => {
-        axiosWithAuth().get("/data")
+        axiosWithAuth().get("/api/friends")
         .then(
             res => {
                 console.log(res);
