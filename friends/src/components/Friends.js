@@ -3,11 +3,29 @@ import {
   Card, CardText, CardBody,
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
+import { axiosWithAuth } from '../utils/axiosWithAuth.js';
 
 class Friends extends React.Component {
     state = {
         friendList:[]
     };
+    componentDidMount() {
+        this.getData();
+    }
+
+    getData = () => {
+        axiosWithAuth().get("/data")
+        .then(
+            res => {
+                console.log(res);
+                this.setState({
+                    friendList:res.data.data
+                })
+                
+            }
+        )
+        .catch(err => console.log(err))
+    }
 
     render(){
   return (
