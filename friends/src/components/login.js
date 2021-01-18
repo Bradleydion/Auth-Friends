@@ -8,8 +8,8 @@ class Login extends React.Component{
     return (
           <Form inline>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-        <Label for="exampleEmail" className="mr-sm-2">Email</Label>
-        <Input type="email" name="email" id="exampleEmail" placeholder="something@idk.cool" />
+        <Label for="exampleEmail" className="mr-sm-2">Username</Label>
+        <Input type="text" name="username" id="username" placeholder="Username" />
       </FormGroup>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="examplePassword" className="mr-sm-2">Password</Label>
